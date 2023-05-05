@@ -1,0 +1,17 @@
+.customButton {
+  width: 36px;
+  height: 24px;
+
+  background-color: #e2e2ed;
+  color: #000000;
+  font-size: 16px;
+  border: 1px solid #75767f;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.active {
+  background-color: #74546f;
+  border: 1.5px solid #74546f;
+  color: white;
+}

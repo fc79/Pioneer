@@ -1,0 +1,28 @@
+.container {
+  display: grid;
+  background: #e2e2ed;
+  border-radius: 8px;
+  grid-template-rows: 5.9fr 8.9fr 5.9fr 70.1fr 8.9fr;
+  grid-template-columns: 3.7fr 29.1fr 16.7fr 46.7fr 3.7fr;
+}
+
+.title {
+  grid-area: 2 / 2 / 3 / 4;
+  font-weight: bold;
+
+  /* background-color: red; */
+}
+
+.chart {
+  grid-area: 4 / 2 / 5 / 3;
+}
+
+.table {
+  grid-area: 4 / 4 / 5 / 5;
+  /* background-color: yellow; */
+}
+
+.buttons {
+  grid-area: 2 / 4 / 3 / 5;
+  /* background-color: olive; */
+}

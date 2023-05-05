@@ -1,0 +1,268 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.buttons-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container button,
+.buttons-container button {
+  background: #dee1f9;
+  border-radius: 4px;
+  border: 0;
+  cursor: pointer;
+}
+
+.table-buttons {
+  flex-basis: 43.63%;
+  height: 100%;
+}
+
+.map-buttons {
+  flex-basis: 54.11%;
+  height: 100%;
+}
+
+.map-buttons > button {
+  flex-basis: 24.56%;
+  height: 100%;
+}
+
+.map-field {
+  flex-basis: 24.56%;
+  height: 100%;
+}
+.table-buttons > div {
+  flex-basis: 37.98%;
+  height: 100%;
+  border: 1px solid #75767f;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+}
+
+.table-buttons > div > input {
+  width: 74.02%;
+  height: 100%;
+  border: 0;
+}
+
+.table-buttons > div > input::placeholder {
+  padding-right: 10px;
+}
+
+.table-buttons > div > button {
+  width: 25.98%;
+  height: 100%;
+}
+
+.button {
+  width: 9.66%;
+  height: 100%;
+}
+
+.table-visibility {
+  width: 31.97%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5%;
+}
+
+.map-visibility {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5%;
+}
+
+/* .container > div {
+  height: 100%;
+} */
+
+.animation {
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-fill-mode: both;
+}
+
+.table {
+  left: 0;
+  /* width: 32.36vw; */
+  flex-basis: 32.36vw;
+  height: 100%;
+}
+
+.map {
+  position: relative;
+  right: 0;
+  flex-basis: calc(100% - 34.02vw);
+  z-index: 0;
+  height: 100%;
+}
+.map-hided {
+  flex-basis: 0;
+  position: relative;
+}
+.table-hided {
+  flex-basis: 0;
+  /* width: 0; */
+}
+
+.table-hided-to-full-screen {
+  animation-name: table-hided-to-full-screen;
+}
+.table-full-screen-to-hided {
+  animation-name: table-full-screen-to-hided;
+}
+.table-hided-to-normal {
+  animation-name: table-hided-to-normal;
+}
+.table-normal-to-hided {
+  animation-name: table-normal-to-hided;
+}
+.table-normal-to-full-screen {
+  animation-name: table-normal-to-full-screen;
+}
+.table-full-screen-to-normal {
+  animation-name: table-full-screen-to-normal;
+}
+.map-hided-to-full-screen {
+  animation-name: map-hided-to-full-screen;
+}
+.map-full-screen-to-hided {
+  animation-name: map-full-screen-to-hided;
+}
+.map-hided-to-normal {
+  animation-name: map-hided-to-normal;
+}
+.map-normal-to-hided {
+  animation-name: map-normal-to-hided;
+}
+.map-normal-to-full-screen {
+  animation-name: map-normal-to-full-screen;
+}
+.map-full-screen-to-normal {
+  animation-name: map-full-screen-to-normal;
+}
+@keyframes table-hided-to-full-screen {
+  0% {
+    /* width: 0%; */
+    flex-basis: 0%;
+  }
+  100% {
+    /* width: 100%; */
+    flex-basis: 100%;
+  }
+}
+@keyframes table-full-screen-to-hided {
+  0% {
+    /* width: 100%; */
+    flex-basis: 100%;
+  }
+  100% {
+    /* width: 0%; */
+    flex-basis: 0%;
+    border: 0;
+  }
+}
+@keyframes table-hided-to-normal {
+  0% {
+    /* width: 0%; */
+    flex-basis: 0%;
+  }
+  100% {
+    /* width: 32.36vw; */
+    flex-basis: 32.36vw;
+  }
+}
+@keyframes table-normal-to-hided {
+  0% {
+    /* width: 32.36vw; */
+    flex-basis: 32.36vw;
+    border: 0;
+  }
+  100% {
+    /* width: 0%; */
+    flex-basis: 0%;
+  }
+}
+@keyframes table-normal-to-full-screen {
+  0% {
+    /* width: 32.36vw; */
+    flex-basis: 32.36vw;
+  }
+  100% {
+    /* width: 100%; */
+    flex-basis: 100%;
+  }
+}
+
+@keyframes table-full-screen-to-normal {
+  0% {
+    /* width: 100%; */
+    flex-basis: 100%;
+  }
+  100% {
+    /* width: 32.36vw; */
+    flex-basis: 32.36vw;
+  }
+}
+
+@keyframes map-hided-to-full-screen {
+  0% {
+    flex-basis: 0%;
+  }
+  100% {
+    flex-basis: 100%;
+  }
+}
+@keyframes map-full-screen-to-hided {
+  0% {
+    flex-basis: 100%;
+  }
+  100% {
+    flex-basis: 0;
+  }
+}
+
+@keyframes map-hided-to-normal {
+  0% {
+    flex-basis: 0%;
+  }
+  100% {
+    flex-basis: calc(100% - 34.02vw);
+  }
+}
+
+@keyframes map-full-screen-to-normal {
+  0% {
+    flex-basis: 100%;
+  }
+  100% {
+    flex-basis: calc(100% - 34.02vw);
+  }
+}
+
+@keyframes map-normal-to-full-screen {
+  0% {
+    flex-basis: calc(100% - 34.02vw);
+  }
+  100% {
+    flex-basis: 100%;
+  }
+}
+
+@keyframes map-normal-to-hided {
+  0% {
+    flex-basis: calc(100% - 34.02vw);
+  }
+  100% {
+    flex-basis: 0%;
+  }
+}

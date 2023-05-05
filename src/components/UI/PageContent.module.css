@@ -1,0 +1,9 @@
+.content {
+  /* background-color: rgb(245, 131, 216); */
+}
+.content__current-node-hided {
+  grid-area: 1 / 3 / 3 / 6;
+}
+.content__current-node-showed {
+  grid-area: 1 / 3 / 3 / 4;
+}

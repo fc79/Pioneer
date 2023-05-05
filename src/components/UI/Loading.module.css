@@ -1,0 +1,29 @@
+.container {
+  background-color: #fdfbff;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.group {
+  flex-basis: 8.3%;
+  height: 4%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.selected {
+  border-radius: 50%;
+  background-color: #1e52d7;
+  flex-basis: 26%;
+  height: 100%;
+}
+
+.de-selected {
+  opacity: 0.16;
+}

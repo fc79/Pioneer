@@ -1,0 +1,21 @@
+.container {
+  display: grid;
+  grid-template-columns: 36.9fr 2.1fr 58.1fr;
+  grid-template-rows: 0.5fr 31fr 3fr 54fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+.technology {
+  grid-area: 2 / 1 / 3 / 2;
+}
+
+.arfcn {
+  grid-area: 2 / 3 / 3 / 4;
+  /* background-color: brown; */
+}
+
+.table {
+  grid-area: 4 / 1 / 5 / 4;
+  /* background-color: orange; */
+}

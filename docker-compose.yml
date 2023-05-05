@@ -1,0 +1,19 @@
+version: '3.5'
+
+services:
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: frontend
+    image: registry.pestelecom.ir/pioneer/frontend:${BUILD_VERSION:-latest}
+    ports:
+      - "5001:80"
+    networks:
+      - pioneer-net
+
+networks:
+  pioneer-net:
+    external:
+      name: pioneer-net
+

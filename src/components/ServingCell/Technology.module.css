@@ -1,0 +1,22 @@
+.container {
+  display: grid;
+  background: #e2e2ed;
+  border-radius: 8px;
+  grid-template-rows: 5.97fr 8.95fr 5.97fr 70.14fr 8.95fr;
+  grid-template-columns: 5.44fr 42.63fr 15.87fr 17fr 20.18fr;
+}
+
+.title {
+  grid-area: 2 / 2 / 3 / 5;
+  /* background-color: green; */
+  font-weight: bold;
+}
+
+.chart {
+  grid-area: 4 / 2 / 5 / 3;
+}
+
+.legend {
+  grid-area: 4 / 4 / 5 / 5;
+  /* background-color: red; */
+}
